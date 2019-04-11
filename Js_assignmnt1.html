@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a=prompt("Enter any name? :");
+    function palindromes(a)
+    {
+        var arr=[];
+        var arr_inverse=[];
+        var display=false;
+        arr_inverse=arr;
+        arr=a.split("");
+        arr_inverse=a.split("");
+        arr_inverse=arr_inverse.reverse();
+        if(arr.join()==arr_inverse.join())
+        {
+            alert("palindromes");
+        }
+        else
+        {
+            alert("other than palindromes");
+        }
+  
+    }
+        if(a!=null && a!=""){
+            palindromes(a);
+        }
+        else if(a==null || a==""){
+        a=prompt("Enter any name? :");
+                if(a!=null && a!=""){
+                palindromes(a);}
+        }
+
+    
+    // if(a!=null && a!="")
+    // {
+    //     var arr=[];
+    //     var arr_inverse=[];
+    //     var display=false;
+    //     arr_inverse=arr;
+    //     arr=a.split("");
+    //     arr_inverse=a.split("");
+    //     arr_inverse=arr_inverse.reverse();
+    //     if(arr.join()==arr_inverse.join())
+    //     {
+    //         alert("palindromes");
+    //     }
+    //     else
+    //     {
+    //         alert("other than palindromes");
+    //     }
+    // }
+    // else if(a==null || a=="")
+    // {
+    //     a=prompt("Enter any name? :");
+
+    // }
+
+
+    </script>
+</body>
+</html>
